@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer base{
+    h1{
+      @apply font-[pacifico] font-semibold text-3xl
+    }
+}

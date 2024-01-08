@@ -50,7 +50,7 @@ export const Navbar = () => {
           <FaBars size={20} className='cursor-pointer'/>
         </div>
           {/* mobile */}
-          <div onClick={handleNav} className={nav ? 'overflow-hidden lg:hidden ease-in duration-300 absolute text-[#f9f2ec] top-0 right-0  w-[40%] bg-[#4d3319]/90 px-4 py-16' : 'absolute left-[-100%] top-0 h-screen ease-in duration-500' }>
+          <div onClick={handleNav} className={nav ? 'overflow-hidden lg:hidden ease-in duration-300 absolute text-[#f9f2ec] top-0 right-0  w-[40%] bg-[#1e9e95]/90 px-4 py-16' : 'absolute left-[-100%] top-0 h-screen ease-in duration-500' }>
            <div  className='flex flex-col gap-4 cursor-pointer text-lg'>
               <Link to='home' smooth={true} duration={2000} onClick={closeNav}>
                 <h2>Home</h2>

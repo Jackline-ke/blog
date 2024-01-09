@@ -38,7 +38,9 @@ export const Navbar = () => {
           </div>
           <div className='flex items-center gap-2'>
            <div className='border border-[#1e9e95]/50 px-8 py-1'>
-            <h3>Log In</h3>
+            <Link to='login' smooth={true} duration={2000}>
+              <h3>Log In</h3>
+            </Link>
            </div>
            <div className='bg-[#1e9e95] text-white px-8 py-1'>
             <h3>Sign Up</h3>
@@ -66,6 +68,9 @@ export const Navbar = () => {
               </Link>
               <Link to='contact' smooth={true} duration={2000} onClick={closeNav}>
                 <h2>Contact</h2>
+              </Link>
+              <Link to='login' smooth={true} duration={2000}>
+                <h3 className='text-center'>Login <span className='border px-4 py-1 ml-2'>Sign up</span></h3>
               </Link>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {FaBars, FaUser} from 'react-icons/fa'
-import {Link} from 'react-scroll'
+import { Link } from 'react-router-dom';
 import book from '../assets/book.png'
 
 export const Navbar = () => {
@@ -14,36 +14,32 @@ export const Navbar = () => {
   return (
     <div className='fixed w-full px-8 py-4 md:px-16 text-white font-serif bg-opacity-70 shadow-md' style={{ backdropFilter: 'blur(5px)', webkitBackdropFilter: 'blur(5px)', zIndex: 1000 /* Set a higher z-index */ }}>
       <div className='flex justify-between items-center'>
-        <div className='flex'>
+        <Link to="/" smooth={true} duration={200} className='flex'>
           <img src={book} className='w-8'/>
           <h1>blogSite</h1>
-        </div>
+        </Link>
         <div className='hidden lg:flex gap-8 cursor-pointer'>
           <div className='flex gap-8 items-center'>
             <Link to='home' smooth={true} duration={2000}>
               <h2>Home</h2>
             </Link>
             <Link to='features' smooth={true} duration={2000}>
-              <h2>Features</h2>
+              <h2>About</h2>
             </Link>
             <Link to='skills' smooth={true} duration={2000}>
-              <h2>Skills</h2>
-            </Link>
-            <Link to='projects' smooth={true} duration={2000}>
-              <h2>Projects</h2>
-            </Link>
-            <Link to='contact' smooth={true} duration={2000}>
-              <h2>Contact</h2>
+              <h2>Blogs</h2>
             </Link>
           </div>
           <div className='flex items-center gap-2'>
            <div className='border border-[#1e9e95]/50 px-8 py-1'>
-            <Link to='login' smooth={true} duration={2000}>
+            <Link to='/login' smooth={true} duration={2000}>
               <h3>Log In</h3>
             </Link>
            </div>
            <div className='bg-[#1e9e95] text-white px-8 py-1'>
-            <h3>Sign Up</h3>
+           <Link to='/signup' smooth={true} duration={2000}>
+              <h3>Sign Up</h3>
+            </Link>
            </div>
           </div>
         </div>
@@ -58,18 +54,12 @@ export const Navbar = () => {
                 <h2>Home</h2>
               </Link>
               <Link to='features' smooth={true} duration={2000} onClick={closeNav}>
-                <h2>Features</h2>
+                <h2>About</h2>
               </Link>
               <Link to='skills' smooth={true} duration={2000} onClick={closeNav}>
-                <h2>Skills</h2>
+                <h2>Blogs</h2>
               </Link>
-              <Link to='projects' smooth={true} duration={2000} onClick={closeNav}>
-                <h2>Projects</h2>
-              </Link>
-              <Link to='contact' smooth={true} duration={2000} onClick={closeNav}>
-                <h2>Contact</h2>
-              </Link>
-              <Link to='login' smooth={true} duration={2000}>
+              <Link to='/login' smooth={true} duration={2000}>
                 <h3 className='text-center'>Login <span className='border px-4 py-1 ml-2'>Sign up</span></h3>
               </Link>
             </div>

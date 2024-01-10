@@ -2,10 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lora&family=Roboto:wght@300&family=Varela+Round&display=swap');
 
 @layer base{
     h1{
       @apply font-[pacifico] font-semibold text-3xl
+    }
+    p{
+      @apply font-[josefin] text-[14px]
     }
 }

@@ -1,14 +1,15 @@
 import React from 'react'
 import hero from '../assets/hero.jpeg'
+import {FaFacebook, FaInstagram, FaTwitter, FaPinterest} from 'react-icons/fa'
 
 const Blog = () => {
   return (
-    <div className='px-8 lg:px-16 py-8 '>
+    <div className='px-8 lg:px-16 py-8 w-full'>
         <div className='flex flex-col'>
-            <h3 className='mb-4 border-b border-b-[#1e9e95]/20 font-serif text-3xl font-semibold text-[#1e9e95]'>Recent Blog Post</h3>
+            <h3 className='mb-8 border-b border-b-[#1e9e95]/20 font-serif text-3xl font-semibold text-[#1e9e95]'>Recent Blog Post</h3>
             <div className='flex flex-col lg:flex-row gap-4'>
             {/* left */}
-            <div className='bg-gray-400 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-4 md:grid-cols-3 '>
                 <div className='rounded-lg bg-[#f5f5f5] py-4 px-4 flex items-center lg:flex-col gap-4 lg:gap-1'>
                     <img src={hero} className='w-full h-48 lg:w-full lg:h-48 object-cover rounded-md'/>
                     <div className=''>
@@ -64,12 +65,36 @@ const Blog = () => {
 
             </div>
             {/* right */}
-            <div className='bg-[#1e9e95] w-[90%]'>
-                <div className='rounded-lg bg-[#f5f5f5] py-4 px-4 flex items-center lg:flex-col gap-4 lg:gap-1'>
-                    <h3 className='border-b border-b-white border-t border-t-white'>About Me</h3>
-                    <img src={hero} className='w-full h-48 lg:w-full lg:h-48 object-cover rounded-md'/>
+            <div className='bg-[#1e9e95] h-fit'>
+                <div className='rounded-lg py-4 px-4 lg:gap-1'>
+                <h3 className='text-center mb-3 border-b border-b-white border-t border-t-white'>About Me</h3>
+                    <div className='flex flex-row lg:flex-col gap-4 items-center justify-between'>
+                        <div className='w-full'>
+                            <img src={hero} className='w-full h-56 lg:h-48 object-cover rounded-md'/>
+                        </div>
+                        <div className='w-4/6 lg:w-full my-4'>
+                            <p className='text-ellipsis text-left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div className='flex flex-col'>
+                        <h3 className='text-center mb-2 border-b border-b-white border-t border-t-white'>Categories</h3>
+                        <div className='flex justify-center'>
+                        <div className='grid grid-cols-2 gap-2'>
+                            <h3>Tech</h3>
+                            <h3>Tech</h3>
+                            <h3>Tech</h3>
+                            <h3>Tech</h3>
+                        </div>
+                        </div>
+                    </div>
                     <div>
-                        <p className='text-ellipsis'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <h3 className='text-center mt-2 border-b border-b-white border-t border-t-white'>Social Media</h3>
+                        <div className='flex justify-center gap-2 mt-2'>
+                            <FaFacebook/>
+                            <FaInstagram/>
+                            <FaPinterest/>
+                            <FaTwitter/>
+                        </div>
                     </div>
                 </div>
                     

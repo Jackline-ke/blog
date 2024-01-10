@@ -27,7 +27,10 @@ export const Navbar = () => {
               <h2>About</h2>
             </Link>
             <Link to='skills' smooth={true} duration={2000}>
-              <h2>Blogs</h2>
+              <h2>Write</h2>
+            </Link>
+            <Link to='skills' smooth={true} duration={2000}>
+              <h2>Contact</h2>
             </Link>
           </div>
           <div className='flex items-center gap-2'>
@@ -58,6 +61,12 @@ export const Navbar = () => {
               </Link>
               <Link to='skills' smooth={true} duration={2000} onClick={closeNav}>
                 <h2>Blogs</h2>
+              </Link>
+              <Link to='skills' smooth={true} duration={2000}>
+                <h2>Write</h2>
+              </Link>
+              <Link to='skills' smooth={true} duration={2000}>
+                <h2>Contact</h2>
               </Link>
               <Link to='/login' smooth={true} duration={2000}>
                 <h3 className='text-center'>Login <span className='border px-4 py-1 ml-2'>Sign up</span></h3>

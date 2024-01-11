@@ -5,6 +5,7 @@ import Blogs from './pages/Blogs';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Write from './pages/Write';
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='login' element={<Login />} />
           <Route path='/blogs' element={<Blogs />} /> 
-          <Route path='/signup' element={<Signup />} /> 
+          <Route path='/signup' element={<Signup />} />
+          <Route path='/write' element={<Write />}/> 
         </Routes>
       </Router>
     </div>

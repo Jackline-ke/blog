@@ -26,7 +26,7 @@ export const Navbar = () => {
             <Link to='features' smooth={true} duration={2000}>
               <h2>About</h2>
             </Link>
-            <Link to='skills' smooth={true} duration={2000}>
+            <Link to='/write' smooth={true} duration={2000}>
               <h2>Write</h2>
             </Link>
             <Link to='skills' smooth={true} duration={2000}>

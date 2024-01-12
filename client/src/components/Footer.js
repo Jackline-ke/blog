@@ -4,7 +4,7 @@ import book from '../assets/book.png'
 
 const Footer = () => {
   return (
-    <div className='w-full h-full bg-[#1e9e95] py-2 px-8 lg:px-32 text-white'>
+    <div className='w-full bg-[#1e9e95] py-2 px-8 lg:px-32 text-white'>
       <div className='flex flex-col gap-2'>
         <div className='flex justify-center'>
           <img src={book} className='w-8'/>

@@ -1,21 +1,28 @@
-import React, {useState} from 'react'
-import {FaBars, FaUser} from 'react-icons/fa'
-import { Link } from 'react-router-dom';
-import book from '../assets/book.png'
+import React, { useState, useEffect } from 'react';
+import { FaBars } from 'react-icons/fa';
+import { Link, useLocation } from 'react-router-dom'; // Import useLocation
+import book from '../assets/book.png';
 
 export const Navbar = () => {
-    const[nav, setNav] = useState(false)
-    const handleNav = ()=>{
-      setNav(!nav)
-    }
+    const [nav, setNav] = useState(false);
+   
+    const handleNav = () => {
+        setNav(!nav);
+    };
+
     const closeNav = () => {
         setNav(false);
-    } 
-  return (
-    <div className='fixed w-full px-8 py-4 md:px-16 text-white font-serif bg-opacity-70 shadow-md' style={{ backdropFilter: 'blur(5px)', webkitBackdropFilter: 'blur(5px)', zIndex: 1000 /* Set a higher z-index */ }}>
+    };
+    return (
+        <div className='fixed w-full px-8 py-4 md:px-16 text-white font-serif shadow-md'
+        style={{
+            backdropFilter: 'blur(5px)',
+            webkitBackdropFilter: 'blur(5px)',
+            zIndex: 1000,
+        }}>
       <div className='flex justify-between items-center'>
         <Link to="/" smooth={true} duration={200} className='flex'>
-          <img src={book} className='w-8'/>
+          <img src={book} className='w-8' alt='hero'/>
           <h1>blogSite</h1>
         </Link>
         <div className='hidden lg:flex gap-8 cursor-pointer'>
@@ -34,14 +41,14 @@ export const Navbar = () => {
             </Link>
           </div>
           <div className='flex items-center gap-2'>
-           <div className='border border-[#1e9e95]/50 px-8 py-1'>
+           <div className='border border-white px-8 p-1'>
             <Link to='/login' smooth={true} duration={2000}>
-              <h3>Log In</h3>
+              <h3 className='font-semibold'>Log In</h3>
             </Link>
            </div>
-           <div className='bg-[#1e9e95] text-white px-8 py-1'>
+           <div className='bg-white text-[#1e9e95] px-8 py-1'>
            <Link to='/signup' smooth={true} duration={2000}>
-              <h3>Sign Up</h3>
+              <h3 className='font-semibold'>Sign Up</h3>
             </Link>
            </div>
           </div>

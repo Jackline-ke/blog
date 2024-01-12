@@ -16,7 +16,7 @@ const Write = () => {
             <h4 className='text-[14px]'><span className='font-semibold text-[#1e9e95]/50'>Author:</span> Jackline Adhiambo</h4>
             <h4 className='text-[14px]'><span className='font-semibold text-[#1e9e95]/50'>Date:</span> 1 hour ago</h4>
           </div>
-          <p className='tracking-wider my-2 lg:my-2 text-[16px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+          <p className='tracking-wider my-2 lg:my-2 lg:text-[16px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
             aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
             occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit 

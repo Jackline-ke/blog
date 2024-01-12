@@ -30,7 +30,7 @@ export const Navbar = () => {
             <Link to='home' smooth={true} duration={2000}>
               <h2>Home</h2>
             </Link>
-            <Link to='features' smooth={true} duration={2000}>
+            <Link to='/about' smooth={true} duration={2000}>
               <h2>About</h2>
             </Link>
             <Link to='/write' smooth={true} duration={2000}>
@@ -63,7 +63,7 @@ export const Navbar = () => {
               <Link to='home' smooth={true} duration={2000} onClick={closeNav}>
                 <h2>Home</h2>
               </Link>
-              <Link to='features' smooth={true} duration={2000} onClick={closeNav}>
+              <Link to='/about' smooth={true} duration={2000} onClick={closeNav}>
                 <h2>About</h2>
               </Link>
               <Link to='skills' smooth={true} duration={2000} onClick={closeNav}>

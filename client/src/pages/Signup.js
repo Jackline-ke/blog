@@ -17,10 +17,6 @@ const Signup = () => {
               <input type='text' placeholder='password' className='border border-[#1e9e95]/30 py-1 px-2 w-full'/>
               <input type='text' placeholder='confirm password' className='border border-[#1e9e95]/30 py-1 px-2 w-full'/>
               <div className='flex justify-between'>
-                <div className='flex'>
-                  <input type='checkbox' className=''/>
-                  <p className='ml-1'>Remember Me</p>
-                </div>
                 <p className='text-gray-600 '>Already Have An Account?<span className='text-[#1e9e95]/70 cursor-pointer'>Login</span></p>
               </div>
             </div>

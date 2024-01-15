@@ -24,6 +24,7 @@ const Login = () => {
                 </div>
               </div>
               <button className='cursor-pointer bg-[#1e9e95] w-full mt-6 py-2 text-white rounded-full shadow-md shadow-[#1e9e95]/50'>Login</button>
+              <p className='text-gray-600 text-center mt-4'>Don't Have An Account?<span className='text-[#1e9e95]/70 cursor-pointer'>Sign Up</span></p>
             </form>
           </div>
         </div>
